@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import CountryList from './components/CountryList/CountryList';
+import CountryInfo from './components/CountryInfo/CountryInfo';
+import './App.css';
 
 const App: React.FC = () => {
     const [selectedCountry, setSelectedCountry] = useState<string | null>(null);
@@ -8,9 +11,9 @@ const App: React.FC = () => {
     };
 
     return (
-        <div>
-            <div>left side</div>
-            <div>right side</div>
+        <div className="app-block">
+            <CountryList onSelectCountry={handleSelectCountry} />
+            <CountryInfo countryCode={selectedCountry} />
         </div>
     );
 };
