@@ -5,6 +5,40 @@
   text-align: center;
 }
 
+.app-block {
+  display: flex;
+  border: 3px solid black;
+}
+
+.app-list {
+  overflow: auto;
+  height: 600px;
+  margin: 0;
+
+  padding: 0;
+}
+
+h2 {
+  border-bottom: 2px solid black;
+  padding-bottom: 15px;
+}
+
+
+
+li {
+  text-align: left;
+  list-style: none;
+  cursor: pointer;
+  border-bottom: 1px solid #213547;
+  padding: 5px 2px 5px 10px;
+}
+
+.info-block {
+  padding: 0 0;
+  width: 400px;
+  border-left: 3px solid;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
